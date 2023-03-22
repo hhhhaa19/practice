@@ -525,3 +525,15 @@ int main()
 		printf_s("%d\n", *(parr[i]+j));
 	}
 }*/
+int main()
+{
+	int a;
+	printf_s("please input a number\n");
+	scanf_s("%d", &a);
+	char* pa = (char *)(&a);
+	if (*pa == 0)
+		printf_s("´ó¶Ë");
+	else
+		printf_s("Ð¡¶Ë");
+	return 0;
+}
